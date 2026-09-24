@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/istok-logo-dark.svg">
+  <img src="images/istok-logo-light.svg" alt="Исток" width="260">
+</picture>
+
 # Исток
 
 **Интерактивный стенд для музея или офиса продаж — без программиста.**
