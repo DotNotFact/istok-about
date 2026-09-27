@@ -1,0 +1,6 @@
+:HL["/istok-about/_next/static/chunks/3m1b9xyv0y3dg.css","style"]
+:HL["/istok-about/landing-next/renders/act01-portrait.avif","image",{"type":"image/avif","fetchPriority":"high","media":"(prefers-color-scheme: light) and (max-width: 640px), (prefers-color-scheme: light) and (min-width: 901px)"}]
+:HL["/istok-about/landing-next/renders/act01-tablet.avif","image",{"type":"image/avif","fetchPriority":"high","media":"(prefers-color-scheme: light) and (min-width: 641px) and (max-width: 900px)"}]
+:HL["/istok-about/landing-next/renders/act01-portrait-dark.avif","image",{"type":"image/avif","fetchPriority":"high","media":"(prefers-color-scheme: dark) and (max-width: 640px), (prefers-color-scheme: dark) and (min-width: 901px)"}]
+:HL["/istok-about/landing-next/renders/act01-tablet-dark.avif","image",{"type":"image/avif","fetchPriority":"high","media":"(prefers-color-scheme: dark) and (min-width: 641px) and (max-width: 900px)"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"8K2KG1wAePAmBFa9kOMYZ"}

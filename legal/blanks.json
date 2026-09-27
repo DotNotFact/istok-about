@@ -1,0 +1,5 @@
+{
+  "[адрес для корреспонденции]": "LEGAL__ADDRESS",
+  "[адрес электронной почты для обращений]": "LEGAL__SUPPORT_EMAIL",
+  "copyright@[домен]": "LEGAL__COPYRIGHT_EMAIL"
+}

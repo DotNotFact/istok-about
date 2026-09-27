@@ -1,0 +1,165 @@
+/* Сгенерировано `pnpm --filter @istok/tokens run build`.
+   Править руками нельзя: источник — packages/tokens/src/palette.ts,
+   а расхождение ловит тест Tokens_GeneratedCssMatchesCommittedFile. */
+
+:root {
+  color-scheme: dark;
+  --abyss: #0B0D10;
+  --base: #0F1215;
+  --surface: #181C20;
+  --raised: #1F2429;
+  --overlay: #22282D;
+  --hover: #2E353B;
+  --clay: #23282D;
+  --line-soft: #21262B;
+  --line: #2A3036;
+  --line-hard: #4A525A;
+  --tx-hi: #F1EEE8;
+  --tx: #C3C8CD;
+  --tx-dim: #9FA6AD;
+  --tx-faint: #8C939A;
+  --tx-ghost: #545B62;
+  --acc: #5CC3DC;
+  --acc-hi: #8AD6E8;
+  --acc-lo: #2F8FA8;
+  --acc-on: #06141A;
+  --ember: #E3AE62;
+  --ember-hi: #F2C98C;
+  --ember-on: #1A1000;
+  --brass: #C9BA6E;
+  --ok: #4CC99C;
+  --warn: #E8B33C;
+  --bad: #F2708B;
+  --info: #9D8CFF;
+  --sr1: #4FB5CE;
+  --sr2: #BB843A;
+  --sr3: #8F7FE8;
+  --acc-wash: rgba(92,195,220,0.13);
+  --acc-edge: rgba(92,195,220,0.34);
+  --ember-wash: rgba(227,174,98,0.12);
+  --ember-edge: rgba(227,174,98,0.32);
+  --ok-wash: rgba(76,201,156,0.12);
+  --warn-wash: rgba(232,179,60,0.12);
+  --bad-wash: rgba(242,112,139,0.12);
+  --info-wash: rgba(157,140,255,0.12);
+  --grid: rgba(255,255,255,.07);
+  --sh-lift: 0 2px 10px -3px rgba(0,0,0,.55), 0 1px 2px rgba(0,0,0,.4);
+  --sh-pop: 0 10px 34px -8px rgba(0,0,0,.66), 0 0 0 1px var(--line);
+  --sh-card: 0 1px 2px rgba(0,0,0,.34);
+  --veil: rgba(15,18,21,0.72);
+  --scrim: rgba(8,10,12,.74);
+  --f-display: "Onest", "Segoe UI", system-ui, sans-serif;
+  --f-text: "Golos Text", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", "Cascadia Code", ui-monospace, monospace;
+  --r-xs: 2px;
+  --r-sm: 3px;
+  --r-md: 5px;
+  --r-lg: 8px;
+  --r-pill: 999px;
+  --d-t1: 90ms;
+  --d-t2: 160ms;
+  --d-t3: 280ms;
+  --d-t4: 520ms;
+  --e-out: cubic-bezier(.16, 1, .3, 1);
+  --e-io: cubic-bezier(.4, 0, .2, 1);
+}
+
+/* Светлая объявляется дважды: по системной настройке и по стампу.
+   Порядок обязателен — иначе явный выбор пользователя проиграет ОС. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --abyss: #E9E6DF;
+    --base: #F3F1EC;
+    --surface: #FFFFFF;
+    --raised: #FAF9F6;
+    --overlay: #FFFFFF;
+    --hover: #EAE7E0;
+    --clay: #ECEAE5;
+    --line-soft: #E3DFD7;
+    --line: #D9D5CC;
+    --line-hard: #A39D91;
+    --tx-hi: #15181B;
+    --tx: #3B4148;
+    --tx-dim: #4F565D;
+    --tx-faint: #5E656C;
+    --tx-ghost: #9AA0A6;
+    --acc: #0B5E78;
+    --acc-hi: #084B60;
+    --acc-lo: #5CC3DC;
+    --acc-on: #FFFFFF;
+    --ember: #8F5C0F;
+    --ember-hi: #74490A;
+    --ember-on: #FFFFFF;
+    --brass: #76621C;
+    --ok: #0B7A5F;
+    --warn: #7E5A06;
+    --bad: #BE2D4A;
+    --info: #5B3FC4;
+    --sr1: #0B5E78;
+    --sr2: #8F5C0F;
+    --sr3: #5B3FC4;
+    --acc-wash: rgba(11,94,120,0.09);
+    --acc-edge: rgba(11,94,120,0.28);
+    --ember-wash: rgba(143,92,15,0.1);
+    --ember-edge: rgba(143,92,15,0.28);
+    --ok-wash: rgba(11,122,95,0.1);
+    --warn-wash: rgba(126,90,6,0.1);
+    --bad-wash: rgba(190,45,74,0.1);
+    --info-wash: rgba(91,63,196,0.1);
+    --grid: rgba(16,20,24,.10);
+    --sh-lift: 0 2px 6px rgba(15,23,42,.07), 0 1px 2px rgba(15,23,42,.05);
+    --sh-pop: 0 18px 44px -14px rgba(15,23,42,.26), 0 0 0 1px var(--line);
+    --sh-card: 0 1px 2px rgba(15,23,42,.05), 0 2px 5px -2px rgba(15,23,42,.05);
+    --veil: rgba(243,241,236,0.82);
+    --scrim: rgba(20,28,38,.46);
+  }
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --abyss: #E9E6DF;
+  --base: #F3F1EC;
+  --surface: #FFFFFF;
+  --raised: #FAF9F6;
+  --overlay: #FFFFFF;
+  --hover: #EAE7E0;
+  --clay: #ECEAE5;
+  --line-soft: #E3DFD7;
+  --line: #D9D5CC;
+  --line-hard: #A39D91;
+  --tx-hi: #15181B;
+  --tx: #3B4148;
+  --tx-dim: #4F565D;
+  --tx-faint: #5E656C;
+  --tx-ghost: #9AA0A6;
+  --acc: #0B5E78;
+  --acc-hi: #084B60;
+  --acc-lo: #5CC3DC;
+  --acc-on: #FFFFFF;
+  --ember: #8F5C0F;
+  --ember-hi: #74490A;
+  --ember-on: #FFFFFF;
+  --brass: #76621C;
+  --ok: #0B7A5F;
+  --warn: #7E5A06;
+  --bad: #BE2D4A;
+  --info: #5B3FC4;
+  --sr1: #0B5E78;
+  --sr2: #8F5C0F;
+  --sr3: #5B3FC4;
+  --acc-wash: rgba(11,94,120,0.09);
+  --acc-edge: rgba(11,94,120,0.28);
+  --ember-wash: rgba(143,92,15,0.1);
+  --ember-edge: rgba(143,92,15,0.28);
+  --ok-wash: rgba(11,122,95,0.1);
+  --warn-wash: rgba(126,90,6,0.1);
+  --bad-wash: rgba(190,45,74,0.1);
+  --info-wash: rgba(91,63,196,0.1);
+  --grid: rgba(16,20,24,.10);
+  --sh-lift: 0 2px 6px rgba(15,23,42,.07), 0 1px 2px rgba(15,23,42,.05);
+  --sh-pop: 0 18px 44px -14px rgba(15,23,42,.26), 0 0 0 1px var(--line);
+  --sh-card: 0 1px 2px rgba(15,23,42,.05), 0 2px 5px -2px rgba(15,23,42,.05);
+  --veil: rgba(243,241,236,0.82);
+  --scrim: rgba(20,28,38,.46);
+}

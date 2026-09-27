@@ -1,0 +1,293 @@
+/* Стойка. Файл собран Истоком — правки переживут пересборку только
+   если внести их в проект, а не сюда. */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+  /* Выделение текста пальцем на витрине — случайность, а не намерение. */
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.istok-root {
+  position: fixed;
+  inset: 0;
+}
+
+.istok-stage {
+  position: absolute;
+  inset: 0;
+}
+
+/* Область нажатия невидима. Кнопку рисует кадр — это и есть обещание
+   продукта: стойка выглядит так, как нарисовал дизайнер, а не так, как
+   умеет конструктор. */
+.istok-hotspot {
+  position: absolute;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  /* Текст остаётся в разметке ради скринридера, но не виден глазу. */
+  font-size: 0;
+  color: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Фокус с клавиатуры виден: стойкой пользуются и с подключённой
+   клавиатурой, и через вспомогательные технологии. */
+/* Страницы PDF — кадрами. Белый фон: документ на чёрном читается как
+   обрыв, а не как страница. Касание по краям листает, счётчик внизу. */
+.istok-pages {
+  position: absolute;
+  overflow: hidden;
+  background: #fff;
+}
+
+.istok-pages__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Прокрутка: страницы столбиком, палец ведёт вверх. Полосы прокрутки
+   на стойке не видно — она там ни к чему и только сбивает касание. */
+.istok-pages--scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.istok-pages--scroll::-webkit-scrollbar { display: none; }
+
+.istok-pages--scroll .istok-pages__img {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.istok-pages__prev,
+.istok-pages__next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 18%;
+  border: 0;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 72px;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.istok-pages__prev { left: 0; text-align: left; padding-left: 12px; }
+.istok-pages__next { right: 0; text-align: right; padding-right: 12px; }
+
+.istok-pages__prev:disabled,
+.istok-pages__next:disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+.istok-pages__num {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font: 600 16px/1.4 system-ui, sans-serif;
+  pointer-events: none;
+}
+
+/* Картинка кнопки заполняет область, не перехватывая касание. */
+.istok-hotspot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.istok-hotspot:focus-visible {
+  outline: 3px solid #3b9eff;
+  outline-offset: -3px;
+}
+
+/* Кадр не отдался — вместо пустоты видно, чего не хватает. */
+.istok-stage img[alt]:not([alt='']) {
+  font-family: ui-monospace, monospace;
+  font-size: 14px;
+  color: #d08a8a;
+}
+
+/* Стойка не запустилась: сообщение для сотрудника, не для посетителя. */
+.istok-fail {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 10px;
+  padding: 32px;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+  background: #16191d;
+  color: #e6e8ea;
+}
+
+/* Экран-сцена (формат 1.5): формат его знает, стойка ещё нет. Место кадра
+   занимает сообщение для сотрудника теми же цветами, что и отказ запуска. */
+.istok-unsupported {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  padding: 32px;
+  text-align: center;
+  font: 600 18px/1.4 system-ui, sans-serif;
+  background: #16191d;
+  color: #e6e8ea;
+}
+
+/* Поле PIN сотрудника: поверх стенда, теми же токенами. */
+.istok-pin {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.istok-pin__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 260px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--tx-hi);
+  font-family: var(--f-text);
+  font-size: 15px;
+}
+
+.istok-pin__input {
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line-hard);
+  border-radius: 6px;
+  background: var(--base);
+  color: var(--tx-hi);
+  font-family: var(--f-mono);
+  font-size: 22px;
+  letter-spacing: 0.3em;
+}
+
+.istok-pin__note {
+  color: var(--tx-dim);
+  font-size: 13px;
+}
+
+.istok-pin__box button {
+  height: 44px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--acc);
+  color: var(--acc-on);
+  font: inherit;
+  font-weight: 700;
+}
+
+/* Служебные сообщения сотруднику музея: происхождение бандла и обновление с
+   флешки. Внизу по центру, поверх экспозиции, но не на весь экран — стойка
+   продолжает работать, пока сотрудник читает.
+
+   Стили живут здесь, а не в оболочке Tauri: KIOSK_CSS — единственная таблица
+   стилей, которая доезжает до стойки. */
+
+.istok-trust,
+.istok-update {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  z-index: 40;
+  max-width: 62ch;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--base);
+  color: var(--tx-hi);
+  font-size: 15px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+/* Подпись не сходится — это происшествие, а не состояние. */
+.istok-trust[data-trust='broken'],
+.istok-update[data-update='refused'] {
+  border-color: var(--warn);
+}
+
+.istok-update__what {
+  margin: 0 0 12px;
+}
+
+.istok-update__row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Кнопки крупные: на стойке по ним попадают пальцем, а правило 8
+   дизайн-системы требует не меньше 44 пикселей по стороне. */
+.istok-update__yes,
+.istok-update__no {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--tx-hi);
+  font: inherit;
+}
+
+.istok-update__yes {
+  border-color: var(--acc);
+  background: var(--acc);
+  color: var(--acc-on);
+  font-weight: 700;
+}
+
+.istok-update__yes[disabled],
+.istok-update__no[disabled] {
+  opacity: 0.5;
+}
+
+.istok-fail b {
+  font-size: 20px;
+}
+
+.istok-fail span {
+  font-size: 14px;
+  color: #8b9299;
+  max-width: 46ch;
+  line-height: 1.5;
+}

@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "up": "Y",
+  "units": "m",
+  "cameras": {
+    "hero": {
+      "position": [
+        -1.022252,
+        1.18,
+        4.230672
+      ],
+      "quaternion": [
+        -0.0086815,
+        -0.1013995,
+        -0.0008849,
+        0.9948076
+      ],
+      "fov": 40.4256,
+      "sensor": {
+        "width": 36.0,
+        "height": 24.0,
+        "fit": "auto"
+      },
+      "lens": 27.5,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "shift": [
+        0.0,
+        -0.060393
+      ],
+      "exposure": {
+        "day": -0.3,
+        "evening": -2.7
+      },
+      "whiteBalance": {
+        "evening": 4100.0
+      },
+      "hidden": [
+        "Table_",
+        "Model_",
+        "Kiosk_Touch"
+      ],
+      "blender": "Hero_desktop.001"
+    },
+    "hero_p": {
+      "position": [
+        -1.023185,
+        1.25,
+        3.961416
+      ],
+      "quaternion": [
+        -0.0087265,
+        0.0004795,
+        4.2e-06,
+        0.9999618
+      ],
+      "fov": 61.9275,
+      "sensor": {
+        "width": 36.0,
+        "height": 24.0,
+        "fit": "auto"
+      },
+      "lens": 30.0,
+      "resolution": [
+        1080,
+        1350
+      ],
+      "shift": [
+        0.0,
+        -0.231276
+      ],
+      "exposure": {
+        "day": -0.3,
+        "evening": -2.7
+      },
+      "whiteBalance": {
+        "evening": 4100.0
+      },
+      "hidden": [
+        "Table_",
+        "Model_",
+        "Kiosk_Touch"
+      ],
+      "blender": "Hero_portrait.001"
+    },
+    "portal": {
+      "position": [
+        0.752892,
+        2.560975,
+        0.403428
+      ],
+      "quaternion": [
+        -0.3743207,
+        -0.1920854,
+        -0.0795644,
+        0.9036906
+      ],
+      "fov": 22.8952,
+      "sensor": {
+        "width": 36.0,
+        "height": 24.0,
+        "fit": "auto"
+      },
+      "lens": 50.0,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "blender": "Cam_Portal"
+    },
+    "portal_p": {
+      "position": [
+        0.637851,
+        2.843815,
+        0.661815
+      ],
+      "quaternion": [
+        -0.3743207,
+        -0.1920854,
+        -0.0795644,
+        0.9036906
+      ],
+      "fov": 39.5978,
+      "sensor": {
+        "width": 36.0,
+        "height": 24.0,
+        "fit": "auto"
+      },
+      "lens": 50.0,
+      "resolution": [
+        1080,
+        1350
+      ],
+      "blender": "Cam_Portal_P"
+    },
+    "loop": {
+      "position": [
+        0.036044,
+        1.65,
+        4.18058
+      ],
+      "quaternion": [
+        -0.0,
+        0.1438359,
+        0.0,
+        0.9896016
+      ],
+      "fov": 53.7016,
+      "sensor": {
+        "width": 36.0,
+        "height": 24.0,
+        "fit": "auto"
+      },
+      "lens": 20.0,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "blender": "Cam_Loop"
+    },
+    "loop_p": {
+      "position": [
+        0.036044,
+        1.5,
+        4.18058
+      ],
+      "quaternion": [
+        -0.0377823,
+        0.1531907,
+        0.0058614,
+        0.9874568
+      ],
+      "fov": 73.7398,
+      "sensor": {
+        "width": 36.0,
+        "height": 24.0,
+        "fit": "auto"
+      },
+      "lens": 24.0,
+      "resolution": [
+        1080,
+        1350
+      ],
+      "blender": "Cam_Loop_P"
+    },
+    "hero_t": {
+      "position": [
+        -1.022252,
+        1.18,
+        4.230672
+      ],
+      "quaternion": [
+        -0.0087132,
+        -0.0551848,
+        -0.0004816,
+        0.998438
+      ],
+      "fov": 45.7473,
+      "sensor": {
+        "width": 36.0,
+        "height": 24.0,
+        "fit": "auto"
+      },
+      "lens": 32.0,
+      "resolution": [
+        1536,
+        1152
+      ],
+      "shift": [
+        0.0,
+        -0.11285
+      ],
+      "exposure": {
+        "day": -0.3,
+        "evening": -2.7
+      },
+      "whiteBalance": {
+        "evening": 4100.0
+      },
+      "hidden": [
+        "Table_",
+        "Model_",
+        "Kiosk_Touch"
+      ],
+      "blender": "Hero_tablet.001"
+    }
+  },
+  "source": "gallery_day.blend",
+  "hero_source": "hero_posters.py"
+}

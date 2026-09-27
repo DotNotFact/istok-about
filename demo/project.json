@@ -1,0 +1,1865 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": "Вилла «Мыс»",
+  "width": 1080,
+  "height": 1920,
+  "startScreenId": "scr_cover",
+  "attract": {
+    "idleSeconds": 60,
+    "returnTo": "start"
+  },
+  "assets": [
+    {
+      "id": "asset_scr_cover",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_cover.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_toc",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_toc.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_gallery",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_gallery.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_g1",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_g1.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_g2",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_g2.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_g3",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_g3.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_g4",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_g4.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_g5",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_g5.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_g6",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_g6.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_g7",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_g7.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_g8",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_g8.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_g9",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_g9.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_plan1",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_plan1.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_plan2",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_plan2.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_r_living",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_r_living.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_r_kitchen",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_r_kitchen.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_r_guest",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_r_guest.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_r_hall",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_r_hall.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_r_study",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_r_study.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_r_terrace",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_r_terrace.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_r_master",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_r_master.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_r_mbath",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_r_mbath.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_r_bed2",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_r_bed2.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_r_bed3",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_r_bed3.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_r_balcony",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_r_balcony.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_view_sunset",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_view_sunset.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_view_day",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_view_day.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_materials",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_materials.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_location",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_location.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_specs",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_specs.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_visit",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_visit.webp",
+      "sha256": null
+    },
+    {
+      "id": "asset_scr_attract",
+      "origin": "local",
+      "kind": "image",
+      "sourcePath": "assets/scr_attract.webp",
+      "sha256": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "scr_cover",
+      "title": "Титул",
+      "backgroundAssetId": "asset_scr_cover",
+      "hotspots": [
+        {
+          "id": "scr_cover-h0",
+          "title": "Открыть",
+          "x": 130,
+          "y": 1560,
+          "width": 820,
+          "height": 160,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_toc",
+      "title": "Меню",
+      "backgroundAssetId": "asset_scr_toc",
+      "hotspots": [
+        {
+          "id": "scr_toc-h0",
+          "title": "Галерея",
+          "x": 64,
+          "y": 330,
+          "width": 460,
+          "height": 360,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        },
+        {
+          "id": "scr_toc-h1",
+          "title": "Планировки",
+          "x": 556,
+          "y": 330,
+          "width": 460,
+          "height": 360,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan1"
+          }
+        },
+        {
+          "id": "scr_toc-h2",
+          "title": "Вид с террасы",
+          "x": 64,
+          "y": 722,
+          "width": 460,
+          "height": 360,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_view_sunset"
+          }
+        },
+        {
+          "id": "scr_toc-h3",
+          "title": "Материалы и отделка",
+          "x": 556,
+          "y": 722,
+          "width": 460,
+          "height": 360,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_materials"
+          }
+        },
+        {
+          "id": "scr_toc-h4",
+          "title": "Локация",
+          "x": 64,
+          "y": 1114,
+          "width": 460,
+          "height": 360,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_location"
+          }
+        },
+        {
+          "id": "scr_toc-h5",
+          "title": "Характеристики",
+          "x": 556,
+          "y": 1114,
+          "width": 460,
+          "height": 360,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_specs"
+          }
+        },
+        {
+          "id": "scr_toc-h6",
+          "title": "Записаться на показ",
+          "x": 64,
+          "y": 1506,
+          "width": 952,
+          "height": 168,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_visit"
+          }
+        },
+        {
+          "id": "scr_toc-h7",
+          "title": "На титул",
+          "x": 48,
+          "y": 1740,
+          "width": 330,
+          "height": 120,
+          "visible": true,
+          "action": {
+            "kind": "home"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_gallery",
+      "title": "Галерея",
+      "backgroundAssetId": "asset_scr_gallery",
+      "hotspots": [
+        {
+          "id": "scr_gallery-h0",
+          "title": "Меню",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_gallery-h1",
+          "title": "Вилла на закате",
+          "x": 64,
+          "y": 370,
+          "width": 296,
+          "height": 408,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g1"
+          }
+        },
+        {
+          "id": "scr_gallery-h2",
+          "title": "Фасад на море",
+          "x": 392,
+          "y": 370,
+          "width": 296,
+          "height": 408,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g2"
+          }
+        },
+        {
+          "id": "scr_gallery-h3",
+          "title": "Инфинити-бассейн",
+          "x": 720,
+          "y": 370,
+          "width": 296,
+          "height": 408,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g3"
+          }
+        },
+        {
+          "id": "scr_gallery-h4",
+          "title": "Гостиная",
+          "x": 64,
+          "y": 810,
+          "width": 296,
+          "height": 408,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g4"
+          }
+        },
+        {
+          "id": "scr_gallery-h5",
+          "title": "Кухня-столовая",
+          "x": 392,
+          "y": 810,
+          "width": 296,
+          "height": 408,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g5"
+          }
+        },
+        {
+          "id": "scr_gallery-h6",
+          "title": "Мастер-спальня",
+          "x": 720,
+          "y": 810,
+          "width": 296,
+          "height": 408,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g6"
+          }
+        },
+        {
+          "id": "scr_gallery-h7",
+          "title": "Терраса",
+          "x": 64,
+          "y": 1250,
+          "width": 296,
+          "height": 408,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g7"
+          }
+        },
+        {
+          "id": "scr_gallery-h8",
+          "title": "Дом на скале",
+          "x": 392,
+          "y": 1250,
+          "width": 296,
+          "height": 408,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g8"
+          }
+        },
+        {
+          "id": "scr_gallery-h9",
+          "title": "Подъезд",
+          "x": 720,
+          "y": 1250,
+          "width": 296,
+          "height": 408,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g9"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_g1",
+      "title": "Вилла на закате",
+      "backgroundAssetId": "asset_scr_g1",
+      "hotspots": [
+        {
+          "id": "scr_g1-h0",
+          "title": "Галерея",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        },
+        {
+          "id": "scr_g1-h1",
+          "title": "Предыдущее фото",
+          "x": 48,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g9"
+          }
+        },
+        {
+          "id": "scr_g1-h2",
+          "title": "Следующее фото",
+          "x": 852,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_g2",
+      "title": "Фасад на море",
+      "backgroundAssetId": "asset_scr_g2",
+      "hotspots": [
+        {
+          "id": "scr_g2-h0",
+          "title": "Галерея",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        },
+        {
+          "id": "scr_g2-h1",
+          "title": "Предыдущее фото",
+          "x": 48,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g1"
+          }
+        },
+        {
+          "id": "scr_g2-h2",
+          "title": "Следующее фото",
+          "x": 852,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_g3",
+      "title": "Инфинити-бассейн",
+      "backgroundAssetId": "asset_scr_g3",
+      "hotspots": [
+        {
+          "id": "scr_g3-h0",
+          "title": "Галерея",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        },
+        {
+          "id": "scr_g3-h1",
+          "title": "Предыдущее фото",
+          "x": 48,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g2"
+          }
+        },
+        {
+          "id": "scr_g3-h2",
+          "title": "Следующее фото",
+          "x": 852,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_g4",
+      "title": "Гостиная",
+      "backgroundAssetId": "asset_scr_g4",
+      "hotspots": [
+        {
+          "id": "scr_g4-h0",
+          "title": "Галерея",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        },
+        {
+          "id": "scr_g4-h1",
+          "title": "Предыдущее фото",
+          "x": 48,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g3"
+          }
+        },
+        {
+          "id": "scr_g4-h2",
+          "title": "Следующее фото",
+          "x": 852,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_g5",
+      "title": "Кухня-столовая",
+      "backgroundAssetId": "asset_scr_g5",
+      "hotspots": [
+        {
+          "id": "scr_g5-h0",
+          "title": "Галерея",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        },
+        {
+          "id": "scr_g5-h1",
+          "title": "Предыдущее фото",
+          "x": 48,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g4"
+          }
+        },
+        {
+          "id": "scr_g5-h2",
+          "title": "Следующее фото",
+          "x": 852,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_g6",
+      "title": "Мастер-спальня",
+      "backgroundAssetId": "asset_scr_g6",
+      "hotspots": [
+        {
+          "id": "scr_g6-h0",
+          "title": "Галерея",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        },
+        {
+          "id": "scr_g6-h1",
+          "title": "Предыдущее фото",
+          "x": 48,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g5"
+          }
+        },
+        {
+          "id": "scr_g6-h2",
+          "title": "Следующее фото",
+          "x": 852,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_g7",
+      "title": "Терраса",
+      "backgroundAssetId": "asset_scr_g7",
+      "hotspots": [
+        {
+          "id": "scr_g7-h0",
+          "title": "Галерея",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        },
+        {
+          "id": "scr_g7-h1",
+          "title": "Предыдущее фото",
+          "x": 48,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g6"
+          }
+        },
+        {
+          "id": "scr_g7-h2",
+          "title": "Следующее фото",
+          "x": 852,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_g8",
+      "title": "Дом на скале",
+      "backgroundAssetId": "asset_scr_g8",
+      "hotspots": [
+        {
+          "id": "scr_g8-h0",
+          "title": "Галерея",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        },
+        {
+          "id": "scr_g8-h1",
+          "title": "Предыдущее фото",
+          "x": 48,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g7"
+          }
+        },
+        {
+          "id": "scr_g8-h2",
+          "title": "Следующее фото",
+          "x": 852,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g9"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_g9",
+      "title": "Подъезд",
+      "backgroundAssetId": "asset_scr_g9",
+      "hotspots": [
+        {
+          "id": "scr_g9-h0",
+          "title": "Галерея",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        },
+        {
+          "id": "scr_g9-h1",
+          "title": "Предыдущее фото",
+          "x": 48,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g8"
+          }
+        },
+        {
+          "id": "scr_g9-h2",
+          "title": "Следующее фото",
+          "x": 852,
+          "y": 1680,
+          "width": 180,
+          "height": 180,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_g1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_plan1",
+      "title": "Планировка · 1 этаж",
+      "backgroundAssetId": "asset_scr_plan1",
+      "hotspots": [
+        {
+          "id": "scr_plan1-h0",
+          "title": "Меню",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_plan1-h1",
+          "title": "1 этаж",
+          "x": 64,
+          "y": 330,
+          "width": 470,
+          "height": 108,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan1"
+          }
+        },
+        {
+          "id": "scr_plan1-h2",
+          "title": "2 этаж",
+          "x": 546,
+          "y": 330,
+          "width": 470,
+          "height": 108,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan2"
+          }
+        },
+        {
+          "id": "scr_plan1-h3",
+          "title": "Кабинет",
+          "x": 62,
+          "y": 486,
+          "width": 178,
+          "height": 199,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_r_study"
+          }
+        },
+        {
+          "id": "scr_plan1-h4",
+          "title": "Холл",
+          "x": 445,
+          "y": 486,
+          "width": 164,
+          "height": 199,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_r_hall"
+          }
+        },
+        {
+          "id": "scr_plan1-h5",
+          "title": "Гостевая спальня",
+          "x": 62,
+          "y": 692,
+          "width": 137,
+          "height": 300,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_r_guest"
+          }
+        },
+        {
+          "id": "scr_plan1-h6",
+          "title": "Гостиная",
+          "x": 206,
+          "y": 692,
+          "width": 528,
+          "height": 300,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_r_living"
+          }
+        },
+        {
+          "id": "scr_plan1-h7",
+          "title": "Кухня-столовая",
+          "x": 809,
+          "y": 599,
+          "width": 209,
+          "height": 394,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_r_kitchen"
+          }
+        },
+        {
+          "id": "scr_plan1-h8",
+          "title": "Терраса",
+          "x": 202,
+          "y": 1000,
+          "width": 832,
+          "height": 208,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_r_terrace"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_plan2",
+      "title": "Планировка · 2 этаж",
+      "backgroundAssetId": "asset_scr_plan2",
+      "hotspots": [
+        {
+          "id": "scr_plan2-h0",
+          "title": "Меню",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_plan2-h1",
+          "title": "1 этаж",
+          "x": 64,
+          "y": 330,
+          "width": 470,
+          "height": 108,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan1"
+          }
+        },
+        {
+          "id": "scr_plan2-h2",
+          "title": "2 этаж",
+          "x": 546,
+          "y": 330,
+          "width": 470,
+          "height": 108,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan2"
+          }
+        },
+        {
+          "id": "scr_plan2-h3",
+          "title": "Спальня 2",
+          "x": 63,
+          "y": 519,
+          "width": 274,
+          "height": 237,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_r_bed2"
+          }
+        },
+        {
+          "id": "scr_plan2-h4",
+          "title": "Мастер-спальня",
+          "x": 63,
+          "y": 852,
+          "width": 423,
+          "height": 259,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_r_master"
+          }
+        },
+        {
+          "id": "scr_plan2-h5",
+          "title": "Мастер-ванная",
+          "x": 625,
+          "y": 852,
+          "width": 171,
+          "height": 259,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_r_mbath"
+          }
+        },
+        {
+          "id": "scr_plan2-h6",
+          "title": "Спальня 3",
+          "x": 805,
+          "y": 852,
+          "width": 212,
+          "height": 259,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_r_bed3"
+          }
+        },
+        {
+          "id": "scr_plan2-h7",
+          "title": "Балкон",
+          "x": 44,
+          "y": 1120,
+          "width": 496,
+          "height": 186,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_r_balcony"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_r_living",
+      "title": "Гостиная",
+      "backgroundAssetId": "asset_scr_r_living",
+      "hotspots": [
+        {
+          "id": "scr_r_living-h0",
+          "title": "План 1 этажа",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan1"
+          }
+        },
+        {
+          "id": "scr_r_living-h1",
+          "title": "Меню",
+          "x": 668,
+          "y": 64,
+          "width": 364,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_r_living-h2",
+          "title": "Все фото",
+          "x": 80,
+          "y": 1700,
+          "width": 460,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_r_kitchen",
+      "title": "Кухня-столовая",
+      "backgroundAssetId": "asset_scr_r_kitchen",
+      "hotspots": [
+        {
+          "id": "scr_r_kitchen-h0",
+          "title": "План 1 этажа",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan1"
+          }
+        },
+        {
+          "id": "scr_r_kitchen-h1",
+          "title": "Меню",
+          "x": 668,
+          "y": 64,
+          "width": 364,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_r_kitchen-h2",
+          "title": "Все фото",
+          "x": 80,
+          "y": 1700,
+          "width": 460,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_r_guest",
+      "title": "Гостевая спальня",
+      "backgroundAssetId": "asset_scr_r_guest",
+      "hotspots": [
+        {
+          "id": "scr_r_guest-h0",
+          "title": "План 1 этажа",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan1"
+          }
+        },
+        {
+          "id": "scr_r_guest-h1",
+          "title": "Меню",
+          "x": 668,
+          "y": 64,
+          "width": 364,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_r_guest-h2",
+          "title": "Все фото",
+          "x": 80,
+          "y": 1700,
+          "width": 460,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_r_hall",
+      "title": "Холл",
+      "backgroundAssetId": "asset_scr_r_hall",
+      "hotspots": [
+        {
+          "id": "scr_r_hall-h0",
+          "title": "План 1 этажа",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan1"
+          }
+        },
+        {
+          "id": "scr_r_hall-h1",
+          "title": "Меню",
+          "x": 668,
+          "y": 64,
+          "width": 364,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_r_hall-h2",
+          "title": "Все фото",
+          "x": 80,
+          "y": 1700,
+          "width": 460,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_r_study",
+      "title": "Кабинет",
+      "backgroundAssetId": "asset_scr_r_study",
+      "hotspots": [
+        {
+          "id": "scr_r_study-h0",
+          "title": "План 1 этажа",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan1"
+          }
+        },
+        {
+          "id": "scr_r_study-h1",
+          "title": "Меню",
+          "x": 668,
+          "y": 64,
+          "width": 364,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_r_study-h2",
+          "title": "Все фото",
+          "x": 80,
+          "y": 1700,
+          "width": 460,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_r_terrace",
+      "title": "Терраса",
+      "backgroundAssetId": "asset_scr_r_terrace",
+      "hotspots": [
+        {
+          "id": "scr_r_terrace-h0",
+          "title": "План 1 этажа",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan1"
+          }
+        },
+        {
+          "id": "scr_r_terrace-h1",
+          "title": "Меню",
+          "x": 668,
+          "y": 64,
+          "width": 364,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_r_terrace-h2",
+          "title": "Все фото",
+          "x": 80,
+          "y": 1700,
+          "width": 460,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_r_master",
+      "title": "Мастер-спальня",
+      "backgroundAssetId": "asset_scr_r_master",
+      "hotspots": [
+        {
+          "id": "scr_r_master-h0",
+          "title": "План 2 этажа",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan2"
+          }
+        },
+        {
+          "id": "scr_r_master-h1",
+          "title": "Меню",
+          "x": 668,
+          "y": 64,
+          "width": 364,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_r_master-h2",
+          "title": "Все фото",
+          "x": 80,
+          "y": 1700,
+          "width": 460,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_r_mbath",
+      "title": "Мастер-ванная",
+      "backgroundAssetId": "asset_scr_r_mbath",
+      "hotspots": [
+        {
+          "id": "scr_r_mbath-h0",
+          "title": "План 2 этажа",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan2"
+          }
+        },
+        {
+          "id": "scr_r_mbath-h1",
+          "title": "Меню",
+          "x": 668,
+          "y": 64,
+          "width": 364,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_r_mbath-h2",
+          "title": "Все фото",
+          "x": 80,
+          "y": 1700,
+          "width": 460,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_r_bed2",
+      "title": "Спальня 2",
+      "backgroundAssetId": "asset_scr_r_bed2",
+      "hotspots": [
+        {
+          "id": "scr_r_bed2-h0",
+          "title": "План 2 этажа",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan2"
+          }
+        },
+        {
+          "id": "scr_r_bed2-h1",
+          "title": "Меню",
+          "x": 668,
+          "y": 64,
+          "width": 364,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_r_bed2-h2",
+          "title": "Все фото",
+          "x": 80,
+          "y": 1700,
+          "width": 460,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_r_bed3",
+      "title": "Спальня 3",
+      "backgroundAssetId": "asset_scr_r_bed3",
+      "hotspots": [
+        {
+          "id": "scr_r_bed3-h0",
+          "title": "План 2 этажа",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan2"
+          }
+        },
+        {
+          "id": "scr_r_bed3-h1",
+          "title": "Меню",
+          "x": 668,
+          "y": 64,
+          "width": 364,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_r_bed3-h2",
+          "title": "Все фото",
+          "x": 80,
+          "y": 1700,
+          "width": 460,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_r_balcony",
+      "title": "Балкон",
+      "backgroundAssetId": "asset_scr_r_balcony",
+      "hotspots": [
+        {
+          "id": "scr_r_balcony-h0",
+          "title": "План 2 этажа",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_plan2"
+          }
+        },
+        {
+          "id": "scr_r_balcony-h1",
+          "title": "Меню",
+          "x": 668,
+          "y": 64,
+          "width": 364,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_r_balcony-h2",
+          "title": "Все фото",
+          "x": 80,
+          "y": 1700,
+          "width": 460,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_gallery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_view_sunset",
+      "title": "Вид с террасы · закат",
+      "backgroundAssetId": "asset_scr_view_sunset",
+      "hotspots": [
+        {
+          "id": "scr_view_sunset-h0",
+          "title": "Меню",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_view_sunset-h1",
+          "title": "Закат",
+          "x": 80,
+          "y": 1640,
+          "width": 452,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_view_sunset"
+          }
+        },
+        {
+          "id": "scr_view_sunset-h2",
+          "title": "День",
+          "x": 548,
+          "y": 1640,
+          "width": 452,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_view_day"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_view_day",
+      "title": "Вид с террасы · день",
+      "backgroundAssetId": "asset_scr_view_day",
+      "hotspots": [
+        {
+          "id": "scr_view_day-h0",
+          "title": "Меню",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_view_day-h1",
+          "title": "Закат",
+          "x": 80,
+          "y": 1640,
+          "width": 452,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_view_sunset"
+          }
+        },
+        {
+          "id": "scr_view_day-h2",
+          "title": "День",
+          "x": 548,
+          "y": 1640,
+          "width": 452,
+          "height": 132,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_view_day"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_materials",
+      "title": "Материалы и отделка",
+      "backgroundAssetId": "asset_scr_materials",
+      "hotspots": [
+        {
+          "id": "scr_materials-h0",
+          "title": "Меню",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_location",
+      "title": "Локация",
+      "backgroundAssetId": "asset_scr_location",
+      "hotspots": [
+        {
+          "id": "scr_location-h0",
+          "title": "Меню",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_specs",
+      "title": "Характеристики",
+      "backgroundAssetId": "asset_scr_specs",
+      "hotspots": [
+        {
+          "id": "scr_specs-h0",
+          "title": "Меню",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_visit",
+      "title": "Записаться на показ",
+      "backgroundAssetId": "asset_scr_visit",
+      "hotspots": [
+        {
+          "id": "scr_visit-h0",
+          "title": "Меню",
+          "x": 48,
+          "y": 64,
+          "width": 360,
+          "height": 112,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        },
+        {
+          "id": "scr_visit-h1",
+          "title": "Вернуться в меню",
+          "x": 64,
+          "y": 1560,
+          "width": 952,
+          "height": 150,
+          "visible": true,
+          "action": {
+            "kind": "go",
+            "screenId": "scr_toc"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scr_attract",
+      "title": "Заставка",
+      "backgroundAssetId": "asset_scr_attract",
+      "hotspots": [
+        {
+          "id": "scr_attract-h0",
+          "title": "Коснуться",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "visible": true,
+          "action": {
+            "kind": "home"
+          }
+        }
+      ]
+    }
+  ]
+}

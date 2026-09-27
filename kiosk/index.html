@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}} — бандл Истока</title>
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="kiosk.css">
+<style>
+  body { margin: 0; padding: 32px 22px 56px; background: var(--base); color: var(--tx);
+    font-family: var(--f-text); font-size: 14px; line-height: 1.55; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { margin: 0 0 4px; font-family: var(--f-display); font-size: 26px;
+    font-weight: 600; letter-spacing: -.02em; color: var(--tx-hi); }
+  .kind { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--tx-faint); }
+  h2 { margin: 30px 0 10px; font-family: var(--f-display); font-size: 15px;
+    font-weight: 600; color: var(--tx-hi); }
+  dl { display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; margin: 0;
+    padding: 14px 16px; background: var(--surface); border: 1px solid var(--line-soft);
+    border-radius: var(--r-lg); }
+  dt { color: var(--tx-dim); }
+  dd { margin: 0; font-family: var(--f-mono); font-variant-numeric: tabular-nums;
+    color: var(--tx-hi); text-align: right; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  code { font-family: var(--f-mono); font-size: 12.5px; color: var(--tx-hi); }
+  .note { margin: 18px 0 0; padding: 14px 16px; color: var(--warn);
+    background: var(--warn-wash); border: 1px solid var(--warn);
+    border-radius: var(--r-md); }
+  .note b { display: block; margin-bottom: 4px; }
+  footer { margin-top: 32px; padding-top: 14px; border-top: 1px solid var(--line-soft);
+    font-size: 12px; color: var(--tx-faint); }
+</style>
+<!-- Разметка стенда — прямо в странице. Архив открывают двойным кликом по
+     index.html, то есть по file://, а оттуда fetch('project.json') браузер
+     запрещает: «стойка не запустилась, Failed to fetch». Рядом лежит и
+     project.json — он для редактора и сервера; плеер читает этот блок, а к
+     файлу идёт только если блока нет (старые архивы). -->
+<script id="istok-project" type="application/json">{{project}}</script>
+<!-- Карта страниц PDF — заполняет сервер при сборке; браузерный экспорт
+     оставляет её пустой, и документы показываются встроенным просмотрщиком. -->
+<script id="istok-pages" type="application/json">{{pages}}</script>
+<script src="player.js" defer></script>
+</head>
+<body>
+<main>
+  <p class="kind">Бандл Истока</p>
+  <h1>{{title}}</h1>
+  <p>Разметка стенда и его кадры, собранные редактором Истока.</p>
+  <h2>Состав</h2>
+  <dl>
+    <dt>Экраны</dt><dd>{{screens}}</dd>
+    <dt>Кнопки на экранах</dt><dd>{{hotspots}}</dd>
+    <dt>Файлы кадров</dt><dd>{{files}}</dd>
+    <dt>Вес кадров</dt><dd>{{bytes}}</dd>
+    <dt>Холст стенда</dt><dd>{{width}}&times;{{height}}</dd>
+    <dt>Версия формата</dt><dd>{{schemaVersion}}</dd>
+  </dl>
+  <h2>Что где лежит</h2>
+  <ul>
+    <li><code>project.json</code> — разметка стенда целиком: экраны, кнопки,
+      переходы, поведение при простое. Это и есть проект — его открывает
+      редактор Истока.</li>
+    <li><code>assets/</code> — файлы кадров. Имя каждого файла — sha256 его
+      содержимого: один и тот же кадр, использованный на десяти экранах,
+      лежит в архиве один раз.</li>
+    <li><code>signature.json</code> — подпись состава, если стенд собран на
+      сервере Истока. Стойка сверяет её при запуске; у архива, собранного
+      в редакторе, этого файла нет, и стойка говорит об этом сотруднику.</li>
+    <li><code>kiosk.css</code> — как выглядит стойка: кадр во весь экран,
+      области нажатия невидимы. Читается и правится блокнотом.</li>
+    <li><code>THIRD-PARTY-NOTICES.md</code> — сторонние компоненты и их
+      лицензии. Обязательство атрибуции переходит к тому, кто
+      распространяет копию.</li>
+    <li><code>LICENSE.md</code> — условия использования самого приложения.</li>
+    <li><code>RIGHTS.md</code> — на каких основаниях в стенде показан
+      контент: права на произведения, права на их изображения, согласия
+      изображённых людей, разрешение дирекции музея.</li>
+    <li><code>player.js</code> — сам плеер: экраны, переходы, возврат по
+      простою, журнал касаний. Один файл, без интернета и без установки.</li>
+    <li><code>theme.css</code> — цвета и шрифты Истока. Ими нарисована эта
+      страница и ими же будут нарисованы служебные экраны стойки.</li>
+  </ul>
+  <p class="note">
+    <b>Стенд запускается этой же страницей.</b>
+    Внутри <code>player.js</code> — то же ядро, которое крутится в превью
+    редактора: отдельной ветки кода для стойки не существует, поэтому
+    «в превью было иначе» здесь физически невозможно. Первое касание
+    разворачивает стойку на весь экран и прячет курсор.
+  </p>
+  <p class="note">
+    Этот текст виден, только пока стенд не запустился. Если он остался на
+    экране — рядом со страницей нет <code>project.json</code>: распакуйте
+    архив целиком, не открывайте страницу прямо из zip.
+  </p>
+  <footer>
+    {{screensWord}} ·
+    заставка через {{idleSeconds}} с простоя ·
+    формат {{schemaVersion}}
+  </footer>
+</main>
+</body>
+</html>

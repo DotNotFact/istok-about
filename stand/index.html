@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Истокстенд</title>
+<!-- Токены темы. Не украшение: `KIOSK_CSS`, который плеер вливает в
+     страницу, ссылается на два десятка переменных (`--acc`, `--surface`,
+     `--f-mono` и далее), а объявлены они только здесь. Без этой строки
+     каждое такое свойство молча выбрасывается браузером, и служебные экраны
+     стойки — загрузка, «Коснитесь экрана», ошибка медиа, плашка о подписи —
+     теряют цвета и шрифты Истока. Правило дизайн-системы: узнаваемость не
+     заканчивается на редакторе.
+
+     Раньше этого не было видно: архив для Windows вёз обложку ВЕБ-КИОСКА,
+     а она тему подключает. С #87 в архив едет эта страница, и дыра стала
+     достижимой. Файл лежит рядом — его кладёт в архив и экспорт, и
+     серверная сборка. -->
+<link rel="stylesheet" href="theme.css">
+<style>
+  html, body { margin: 0; height: 100%; background: #0b0d10; color: #e8ecf2; overflow: hidden; }
+  body { font-family: system-ui, sans-serif; }
+  /* Курсор скрыт разметкой тоже, не только вызовом в оболочку: между
+     открытием окна и первым ответом моста проходит несколько кадров, и
+     стрелка мыши успевает мелькнуть поверх экспозиции. */
+  * { cursor: none; }
+  /* Ни выделения, ни перетаскивания: посетитель в зале водит пальцем по
+     экрану, и подсвеченный синим абзац с ручкой выделения — это не
+     экспозиция, а сломанный стенд. */
+  * { user-select: none; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; }
+  .istok-boot { display: flex; height: 100%; align-items: center; justify-content: center; opacity: .5; }
+  /* Плашка о происхождении бандла — сотруднику музея, не посетителю.
+     Поверх экспозиции, внизу: сверху идёт содержимое экрана. */
+  .istok-trust { position: fixed; left: 24px; right: 24px; bottom: 24px; z-index: 9;
+    padding: 14px 18px; border-radius: 8px; font-size: 15px; line-height: 1.4;
+    background: #1b1f26; color: #e8ecf2; border: 1px solid #2a3038; }
+  .istok-trust[data-trust="broken"] { background: #2a1416; border-color: #7a2b30; }
+</style>
+</head>
+<body>
+<div class="istok-boot">Загрузка…</div>
+<script src="player.js"></script>
+</body>
+</html>
