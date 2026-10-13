@@ -245,6 +245,18 @@ html, body {
   border-color: var(--warn);
 }
 
+/* «Не подписан» — состояние, а не происшествие (P081): мелко, в углу и один
+   раз на бандл. Громкой остаётся только несошедшаяся подпись. */
+.istok-trust--quiet {
+  left: auto;
+  right: 16px;
+  bottom: 16px;
+  transform: none;
+  padding: 6px 10px;
+  font-size: 13px;
+  color: var(--tx-dim);
+}
+
 .istok-update__what {
   margin: 0 0 12px;
 }
