@@ -28,7 +28,7 @@
   --ember-on: #1A1000;
   --brass: #C9BA6E;
   --ok: #4CC99C;
-  --warn: #E8B33C;
+  --warn: #F5D020;
   --bad: #F7728D;
   --info: #A190FF;
   --sr1: #4FB5CE;
@@ -39,7 +39,7 @@
   --ember-wash: rgba(227,174,98,0.12);
   --ember-edge: rgba(227,174,98,0.32);
   --ok-wash: rgba(76,201,156,0.12);
-  --warn-wash: rgba(232,179,60,0.12);
+  --warn-wash: rgba(245,208,32,0.12);
   --bad-wash: rgba(247,114,141,0.12);
   --info-wash: rgba(161,144,255,0.12);
   --grid: rgba(255,255,255,.07);
@@ -56,12 +56,22 @@
   --r-md: 5px;
   --r-lg: 8px;
   --r-pill: 999px;
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
   --d-t1: 90ms;
   --d-t2: 160ms;
   --d-t3: 280ms;
   --d-t4: 520ms;
   --e-out: cubic-bezier(.16, 1, .3, 1);
   --e-io: cubic-bezier(.4, 0, .2, 1);
+  --e-in: cubic-bezier(.55, 0, 1, .45);
+  --e-back: cubic-bezier(.34, 1.4, .64, 1);
 }
 
 /* Светлая объявляется дважды: по системной настройке и по стампу.
@@ -93,7 +103,7 @@
     --ember-on: #FFFFFF;
     --brass: #76621C;
     --ok: #0A6B51;
-    --warn: #7B5806;
+    --warn: #A83400;
     --bad: #B02443;
     --info: #5B3FC4;
     --sr1: #0B5E78;
@@ -104,7 +114,7 @@
     --ember-wash: rgba(132,83,5,0.1);
     --ember-edge: rgba(132,83,5,0.28);
     --ok-wash: rgba(10,107,81,0.1);
-    --warn-wash: rgba(123,88,6,0.1);
+    --warn-wash: rgba(168,52,0,0.1);
     --bad-wash: rgba(176,36,67,0.1);
     --info-wash: rgba(91,63,196,0.1);
     --grid: rgba(16,20,24,.10);
@@ -142,7 +152,7 @@
   --ember-on: #FFFFFF;
   --brass: #76621C;
   --ok: #0A6B51;
-  --warn: #7B5806;
+  --warn: #A83400;
   --bad: #B02443;
   --info: #5B3FC4;
   --sr1: #0B5E78;
@@ -153,7 +163,7 @@
   --ember-wash: rgba(132,83,5,0.1);
   --ember-edge: rgba(132,83,5,0.28);
   --ok-wash: rgba(10,107,81,0.1);
-  --warn-wash: rgba(123,88,6,0.1);
+  --warn-wash: rgba(168,52,0,0.1);
   --bad-wash: rgba(176,36,67,0.1);
   --info-wash: rgba(91,63,196,0.1);
   --grid: rgba(16,20,24,.10);
