@@ -14,3 +14,30 @@
 @font-face{font-family:JetBrains Mono;unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;src:url(../media/jetbrains_mono_latin.1bkzbscqrt8rl.woff2)format("woff2");font-display:swap;font-weight:400 700;font-style:normal}.jetbrainsmonolatin_14e7dea5-module__g2B0ta__className{font-family:jetbrainsMonoLatin;font-style:normal}
 @font-face{font-family:JetBrains Mono;unicode-range:U+460-52F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;src:url(../media/jetbrains_mono_cyrillic_ext.1kd-r_s9smv5m.woff2)format("woff2");font-display:swap;font-weight:400 700;font-style:normal}.jetbrainsmonocyrillicext_853227c4-module__1E6RpW__className{font-family:jetbrainsMonoCyrillicExt;font-style:normal}
 @font-face{font-family:JetBrains Mono;unicode-range:U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;src:url(../media/jetbrains_mono_latin_ext.3_z45zcoc-xoz.woff2)format("woff2");font-display:swap;font-weight:400 700;font-style:normal}.jetbrainsmonolatinext_44f37bf7-module__jXZt2q__className{font-family:jetbrainsMonoLatinExt;font-style:normal}
+
+/* Герой: свечение поверх экрана стойки смывало текст — экран теперь из резкого мастера, поверх только свет пола */
+html .ln .act--hero .poster::after{content:none!important;display:none!important}
+html .ln .act--hero .poster-alt::before{background:radial-gradient(26% 4.5% at 39% 64%,color-mix(in oklab,var(--acc-lo) 42%,transparent),transparent)!important}
+@media (min-width:641px) and (max-width:900px){html .ln .act--hero .poster-alt::before{background:radial-gradient(22% 5% at 32% 76%,color-mix(in oklab,var(--acc-lo) 42%,transparent),transparent)!important}}
+/* Дерево экранов: высоту больше не режем половиной окна — экраны крупнее */
+@media (min-width:641px) and (min-height:501px){
+html .ln .act--tree .tree{width:min(100%,calc((100svh - 110px)*var(--ar,1)))!important;height:auto!important}
+html .ln .tree__more{font-size:clamp(12px,1.15vw,15px)}
+html .ln .tree__more b{font-size:clamp(20px,2.4vw,32px)}
+html .ln .tree__node,html .ln .tree__more{border-radius:6px}
+}
+/* Дерево на узком экране: три в ряд вместо пяти, ряды переносятся — экраны крупные, связи рисует сам блок */
+@media (max-width:640px){
+html .ln .act--tree .tree{--ar:.4!important;aspect-ratio:2/5!important;width:min(100%,calc((100svh - 150px)*.4))!important;max-height:none!important}
+html .ln .act--tree .tree .tree__links{inset:auto!important;left:0!important;top:21.3%!important;width:100%!important;height:31.1%!important;background:linear-gradient(var(--brass),var(--brass)) 50% 0/1.5px 100% no-repeat,linear-gradient(var(--brass),var(--brass)) 50% 84%/65% 1.5px no-repeat,linear-gradient(var(--brass),var(--brass)) 17.5% 100%/1.5px 16% no-repeat,linear-gradient(var(--brass),var(--brass)) 82.5% 100%/1.5px 16% no-repeat}
+html .ln .act--tree .tree .tree__links path{display:none}
+html .ln .act--tree .tree .tree__node,html .ln .act--tree .tree .tree__more{width:30%!important;height:21.3%!important;opacity:1!important}
+html .ln .act--tree .tree .tree__node:nth-of-type(1){left:35%!important;top:0!important}
+html .ln .act--tree .tree .tree__node:nth-of-type(2){left:35%!important;top:26.2%!important}
+html .ln .act--tree .tree .tree__node:nth-of-type(3){left:2.5%!important;top:52.4%!important}
+html .ln .act--tree .tree .tree__node:nth-of-type(4){left:35%!important;top:52.4%!important}
+html .ln .act--tree .tree .tree__node:nth-of-type(5){left:67.5%!important;top:52.4%!important}
+html .ln .act--tree .tree .tree__node:nth-of-type(6){left:2.5%!important;top:78.7%!important}
+html .ln .act--tree .tree .tree__more{left:35%!important;top:78.7%!important}
+html .ln .tree__more b{font-size:26px}
+}
